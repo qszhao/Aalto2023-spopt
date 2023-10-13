@@ -11,3 +11,4 @@ dependencies:
   - libpysal
   - spopt
   - pulp
+  - matplotlib

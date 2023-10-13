@@ -1,4 +1,4 @@
-# Workshop: Introduction to Spatial Optimisation at Aalto University
+# Workshop: Introduction to Open Source Spatial Optimisation @Aalto University, Oct 16, 2023
 
 ## Setup
 
@@ -18,6 +18,7 @@ If you are not comfortable with GitHub, download the repository to your computer
 To follow along with the workshop material, it is best if you install Anaconda, a scientific python computing environment. If you do not yet have Anaconda installed, you can install miniconda
 (<https://conda.io/miniconda.html>) or the (larger) Anaconda distribution (<https://www.anaconda.com/download/>). 
 
+Option 1: 
 Using the `conda` program from your command line or within the anaconda prompt, we recommend using the following terminal commands to set up your environment: 
 
 ```bash
@@ -31,12 +32,58 @@ mamba env create --file environment.yml
 # and finally, activate the environment
 conda activate spatialopt
 ```
+Option 2:
+Alternatively, you can use conda to set up the environment as well.
+
+```bash
+
+#Check current conda channel priority
+
+conda config --get channels
+
+# Switch your default conda channel to conda-forge and set it as the highest priority
+# we want to use only the community-distributed packages on "conda-forge" 
+
+conda config --add channels conda-forge 
+conda config --set channel_priority strict
+
+#Create new environment
+
+conda create --name spatialopt python=3.11
+
+#Check existing conda environment
+
+conda info --envs
+
+#Make sure that you are going to work in newly created environment
+
+conda activate spatialopt
+
+# Install packages
+conda install -c conda-forge jupyterlab
+conda install -c conda-forge geopandas
+conda install -c conda-forge matplotlib
+conda install -c conda-forge shapely
+conda install -c conda-forge pyogrio
+conda install -c conda-forge libpysal
+conda install -c conda-forge spopt
+conda install -c conda-forge pulp
+
+#Alternatively run the installation in one line
+
+conda install -c conda-forge jupyterlab geopandas matplotlib shapely pyogrio libpysal spopt pulp  
+
+#Start the  jupyter lab
+
+jupyter lab
+
+```
 
 If you are using the "Anaconda Navigator" interface, you can import the workshop environment using [the steps described in its documentation.](https://docs.anaconda.com/free/navigator/tutorials/manage-environments/#importing-an-environment)
 
 ### Step 3: starting Jupyter Lab
 
-To start your analysis environment locally, you first must activate the spatialopt environment: 
+To start your analysis environment locally, you first must activate the spatialopt environment if you have not done so: 
 ```bash
 conda activate spatialopt
 ```
