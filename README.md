@@ -96,5 +96,5 @@ jupyter lab
 
 ## Acknowledgement
 
-This teaching materials have been co-designed with the spopt development team and special thanks to Dr [Levi Wolf](https://www.bristol.ac.uk/people/person/Levi-Wolf-6fd84b18-4172-4b27-aac9-55092de68fdc/) in University of Bristol, Dr [James Gaboardi](https://www.ornl.gov/staff-profile/james-d-gaboardi) in ORNL, and [Germano Barcelos](https://github.com/gegen07) from Brazil. 
+This teaching materials have been co-designed with the spopt development team and special thanks to [Dr Levi Wolf](https://www.bristol.ac.uk/people/person/Levi-Wolf-6fd84b18-4172-4b27-aac9-55092de68fdc/) in University of Bristol, [Dr James Gaboardi](https://www.ornl.gov/staff-profile/james-d-gaboardi) in ORNL, and [Germano Barcelos](https://github.com/gegen07) from Brazil. 
  
